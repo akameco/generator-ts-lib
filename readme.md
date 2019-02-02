@@ -1,4 +1,4 @@
-# @akameco/generator-ts-lib [![Build Status](https://travis-ci.com/akameco/generator-ts-lib.svg?branch=master)](https://travis-ci.com/akameco/generator-ts-lib)
+# @akameco/generator-ts-lib
 
 > Scaffold node module with TypeScript.
 
