@@ -1,5 +1,5 @@
 interface Opts {
-  postfix: string;
+  postfix: string
 }
 
 export default (input: string, opts: Partial<Opts> = {}) => {
