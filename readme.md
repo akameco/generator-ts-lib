@@ -4,6 +4,7 @@
 
 ## Features
 
+- TypeScript
 - jest
 - prettier
 - eslint

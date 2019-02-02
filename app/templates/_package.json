@@ -8,7 +8,7 @@
   <% if (cli) { %>
   "bin": "cli.js",<% } %>
   "files": [
-    "index.js"<% if (cli) { %>,
+    "dest"<% if (cli) { %>,
     "cli.js"<% } %>
   ],
   "main": "dest/index.js",
@@ -23,7 +23,9 @@
   },
   "scripts": {
     "contributors:add": "all-contributors add",
-    "fmt": "prettier --write '**/*.{js,json,md}'",
+    "build": "del dest && tsc",
+    "prepublish": "yarn build && del dest/**/*.test.*",
+    "fmt": "prettier --write '**/*.{ts,js,json,md}'",
     "lint": "eslint src/**/*.ts",
     "test": "jest",
     "test:ci": "jest --coverage --ci --runInBand"

@@ -9,7 +9,7 @@ cache:
     - "node_modules"
 
 script:
-  - yarn run 
+  - yarn run build
   - yarn run lint
   - yarn run test:ci
 

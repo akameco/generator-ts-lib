@@ -95,7 +95,9 @@ module.exports = class extends Generator {
     const devPkgs = [
       '@akameco/tsconfig',
       '@types/jest',
+      '@types/node',
       'all-contributors-cli',
+      'del',
       'eslint-config-precure',
       'eslint',
       'husky',
