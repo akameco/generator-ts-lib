@@ -41,8 +41,6 @@ $ yo @akameco/ts-lib --help
     --skip-cache    # Do not remember prompt answers                      Default: false
     --skip-install  # Do not automatically install dependencies           Default: false
     --cli           # Add a CLI
-    --coverage      # Add code coverage with nyc
-    --coveralls     # Upload coverage to coveralls.io (implies --coverage)
 ```
 
 ## Tip
