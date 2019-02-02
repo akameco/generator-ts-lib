@@ -1,0 +1,54 @@
+{
+  "name": "@akameco/generator-ts-lib",
+  "version": "0.0.0",
+  "description": "Scaffold out a typescript node module",
+  "license": "MIT",
+  "repository": "akameco/generator-ts-lib",
+  "author": {
+    "name": "akameco",
+    "email": "akameco.t@gmail.com",
+    "url": "https://akameco.github.io"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "fmt": "prettier --write '**/*.js'",
+    "lint": "eslint .",
+    "test": "ava"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "plugin",
+    "boilerplate",
+    "template",
+    "scaffold",
+    "node",
+    "module",
+    "node_module",
+    "node-module",
+    "init"
+  ],
+  "dependencies": {
+    "is-scoped": "^1.0.0",
+    "superb": "^3.0.0",
+    "underscore.string": "^3.3.5",
+    "yeoman-generator": "^3.2.0"
+  },
+  "devDependencies": {
+    "ava": "^1.2.0",
+    "eslint": "^5.13.0",
+    "eslint-config-precure": "^3.5.0",
+    "jest": "^24.0.0",
+    "pify": "^4.0.1",
+    "prettier": "^1.16.3",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^1.9.1"
+  },
+  "ava": {
+    "failWithoutAssertions": false
+  }
+}

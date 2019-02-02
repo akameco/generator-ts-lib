@@ -1,0 +1,42 @@
+{
+  "name": "<%= moduleName %>",
+  "version": "0.0.0",
+  "description": "<%= moduleDescription %>",
+  "license": "MIT",
+  "repository": "akameco/<%= repoName %>",
+  "author": "akameco <akameco.t@gmail.com> (https://akameco.github.io)",
+  <% if (cli) { %>
+  "bin": "cli.js",<% } %>
+  "files": [
+    "index.js"<% if (cli) { %>,
+    "cli.js"<% } %>
+  ],
+  "main": "dest/index.js",
+  "types": "dest/index.d.ts",
+  "keywords": [<% if (cli) { %>
+    "cli-app",
+    "cli",<% } %>
+    ""
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "contributors:add": "all-contributors add",
+    "fmt": "prettier --write '**/*.{js,json,md}'",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest",
+    "test:ci": "jest --coverage --ci --runInBand"
+  },
+  "lint-staged": {
+    "*.{ts,js,json,md}": ["prettier --write", "git add"]
+  },
+  "dependencies": {<% if (cli) { %>
+    "meow": "^3.7.0"
+  <% } %>},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
