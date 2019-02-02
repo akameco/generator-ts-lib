@@ -97,7 +97,7 @@ module.exports = class extends Generator {
       '@types/jest',
       '@types/node',
       'all-contributors-cli',
-      'del',
+      'del-cli',
       'eslint-config-precure',
       'eslint',
       'husky',
