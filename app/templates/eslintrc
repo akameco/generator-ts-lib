@@ -1,12 +1,3 @@
 {
-  "extends": ["precure", "precure/jest"],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "loggerFn": false
-  },
-  "settings": {
-    "import/parsers": {
-      "typescript-eslint-parser": [".ts", ".tsx"]
-    }
-  }
+  "extends": ["precure", "precure/jest", "precure/typescript"]
 }
