@@ -23,7 +23,8 @@
   },
   "scripts": {
     "contributors:add": "all-contributors add",
-    "build": "del dest && tsc",
+    "prebuild": "del dest",
+    "build": "tsc",
     "prepublish": "yarn build && del dest/**/*.test.*",
     "fmt": "prettier --write '**/*.{ts,js,json,md}'",
     "lint": "eslint src/**/*.ts",
