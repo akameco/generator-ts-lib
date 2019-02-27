@@ -1,5 +1,4 @@
-flow-typed
-lib
+dest
 coverage
 .github
 package.json
