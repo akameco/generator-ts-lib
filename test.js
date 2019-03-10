@@ -35,6 +35,7 @@ test.serial('generates expected files', async () => {
     'license',
     'package.json',
     'readme.md',
+    'lint-staged.config.js',
     'src/index.test.ts',
     'src/index.ts',
     'tsconfig.json',
