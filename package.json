@@ -40,11 +40,11 @@
   },
   "devDependencies": {
     "ava": "^1.4.1",
-    "eslint": "^5.16.0",
-    "eslint-config-precure": "^4.15.0",
+    "eslint": "^6.0.1",
+    "eslint-config-precure": "^4.17.0",
     "jest": "^24.8.0",
     "pify": "^4.0.1",
-    "prettier": "^1.17.0",
+    "prettier": "^1.18.2",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^1.9.1"
   },
