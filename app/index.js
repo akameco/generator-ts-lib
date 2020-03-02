@@ -56,6 +56,7 @@ module.exports = class extends Generator {
       cli,
     }
 
+    // eslint-disable-next-line unicorn/consistent-function-scoping
     const mv = (from, to) => {
       this.fs.move(this.destinationPath(from), this.destinationPath(to))
     }
