@@ -31,9 +31,6 @@
     "test": "jest",
     "test:ci": "jest --coverage --ci --runInBand"
   },
-  "lint-staged": {
-    "*.{ts,js,json,md}": ["prettier --write", "git add"]
-  },
   "dependencies": {<% if (cli) { %>
     "meow": "^3.7.0"
   <% } %>},
