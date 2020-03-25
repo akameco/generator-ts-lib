@@ -13,7 +13,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "fmt": "prettier --write '**/*.js'",
+    "fmt": "prettier --write .",
     "lint": "eslint .",
     "test": "ava"
   },
@@ -36,18 +36,18 @@
     "is-scoped": "^2.1.0",
     "superb": "^4.0.0",
     "underscore.string": "^3.3.5",
-    "yeoman-generator": "^4.6.0"
+    "yeoman-generator": "^4.7.2"
   },
   "devDependencies": {
     "@ava/babel": "^1.0.1",
-    "ava": "^3.5.0",
+    "ava": "^3.5.1",
     "eslint": "^6.8.0",
-    "eslint-config-precure": "^5.3.0",
+    "eslint-config-precure": "^5.3.1",
     "jest": "^25.1.0",
     "pify": "^5.0.0",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.2",
     "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^2.2.0"
+    "yeoman-test": "^2.3.0"
   },
   "ava": {
     "babel": true,

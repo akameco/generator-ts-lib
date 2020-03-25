@@ -59,7 +59,7 @@ test.serial('CLI option', async () => {
   assert.fileContent('package.json', /"meow"/u)
 })
 
-test('parse scoped package names', t => {
+test('parse scoped package names', (t) => {
   t.is(
     utils.slugifyPackageName('author/thing'),
     'author-thing',

@@ -12,13 +12,11 @@
 - hasky/lint-staged
 - all-contirbutors
 
-
 ## Install
 
 ```
 $ npm install --global yo @akameco/generator-ts-lib
 ```
-
 
 ## Usage
 
@@ -46,7 +44,6 @@ $ yo @akameco/ts-lib --help
 ## Tip
 
 Use [chalk](https://github.com/sindresorhus/chalk) if you want colors in your CLI.
-
 
 ## License
 
