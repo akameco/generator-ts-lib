@@ -1,6 +1,6 @@
 {
   "name": "@akameco/generator-ts-lib",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Scaffold out a typescript node module",
   "license": "MIT",
   "repository": "akameco/generator-ts-lib",
