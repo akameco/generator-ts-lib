@@ -97,7 +97,6 @@ module.exports = class extends Generator {
       '@akameco/tsconfig',
       '@types/jest',
       '@types/node',
-      'all-contributors-cli',
       'del-cli',
       'eslint-config-precure',
       'eslint',
