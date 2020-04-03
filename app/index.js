@@ -16,6 +16,12 @@ module.exports = class extends Generator {
       type: Boolean,
       description: 'Add a CLI',
     })
+
+    this.option('test', {
+      type: Boolean,
+      description: 'Add test',
+      default: true,
+    })
   }
   // eslint-disable-next-line max-lines-per-function
   async init() {
@@ -30,6 +36,13 @@ module.exports = class extends Generator {
         name: 'moduleDescription',
         message: 'What is your module description?',
         default: `My ${superb.random()} module`,
+      },
+      {
+        name: 'test',
+        message: 'Do you need test?',
+        type: 'confirm',
+        default: Boolean(this.options.test),
+        when: () => this.options.test === undefined,
       },
       {
         name: 'cli',
@@ -95,18 +108,17 @@ module.exports = class extends Generator {
     // yarn add --dev jest prettier eslint
     const devPkgs = [
       '@akameco/tsconfig',
-      '@types/jest',
       '@types/node',
       'del-cli',
       'eslint-config-precure',
       'eslint',
       'husky',
-      'jest',
       'lint-staged',
       'prettier',
-      'ts-jest',
       'typescript',
     ]
-    this.yarnInstall(devPkgs, { dev: true })
+    const testPkgs = ['@types/jest', 'jest', 'ts-jest']
+    const pkgs = [devPkgs, this.options.test ? testPkgs : []].filter(Boolean)
+    this.yarnInstall(pkgs, { dev: true })
   }
 }
