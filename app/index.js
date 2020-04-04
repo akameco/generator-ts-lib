@@ -42,7 +42,6 @@ module.exports = class extends Generator {
         message: 'Do you need test?',
         type: 'confirm',
         default: Boolean(this.options.test),
-        when: () => this.options.test === undefined,
       },
       {
         name: 'cli',
