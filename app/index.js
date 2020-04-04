@@ -51,6 +51,7 @@ module.exports = class extends Generator {
         when: () => this.options.cli === undefined,
       },
     ])
+    this.props = props
     const or = (option, prop) =>
       this.options[option] === undefined
         ? props[prop || option]
@@ -117,7 +118,7 @@ module.exports = class extends Generator {
       'typescript',
     ]
     const testPkgs = ['@types/jest', 'jest', 'ts-jest']
-    const pkgs = [devPkgs, this.options.test ? testPkgs : []].flat().filter(Boolean)
+    const pkgs = [devPkgs, this.props.test ? testPkgs : []].flat().filter(Boolean)
     this.yarnInstall(pkgs, { dev: true })
   }
 }
