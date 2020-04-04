@@ -118,7 +118,7 @@ module.exports = class extends Generator {
       'typescript',
     ]
     const testPkgs = ['@types/jest', 'jest', 'ts-jest']
-    const pkgs = [devPkgs, this.options.test ? testPkgs : []].filter(Boolean)
+    const pkgs = [devPkgs, this.options.test ? testPkgs : []].flat().filter(Boolean)
     this.yarnInstall(pkgs, { dev: true })
   }
 }
